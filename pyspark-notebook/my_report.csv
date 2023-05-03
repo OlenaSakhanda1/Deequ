@@ -1,0 +1,6 @@
+,check,check_level,check_status,constraint,constraint_status,constraint_message
+0,Review Check,Warning,Warning,"MinimumConstraint(Minimum(SafetyStockLevel,None))",Success,
+1,Review Check,Warning,Warning,"CompletenessConstraint(Completeness(StandardCost,None))",Success,
+2,Review Check,Warning,Warning,"UniquenessConstraint(Uniqueness(List(ProductID),None))",Success,
+3,Review Check,Warning,Warning,"ComplianceConstraint(Compliance(Color contained in Black,Silver,Blue,Red,`Color` IS NULL OR `Color` IN ('Black','Silver','Blue','Red'),None))",Failure,Value: 0.8869047619047619 does not meet the constraint requirement!
+4,Review Check,Warning,Warning,"ComplianceConstraint(Compliance(DaysToManufacture is non-negative,COALESCE(CAST(DaysToManufacture AS DECIMAL(20,10)), 0.0) >= 0,None))",Success,
